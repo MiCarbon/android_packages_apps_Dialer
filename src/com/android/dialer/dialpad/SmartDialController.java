@@ -227,21 +227,12 @@ public class SmartDialController {
             show(active);
             if (!containsSameContact(oldItem, item)) {
                 // Determine what kind of animation to use for the new view
-<<<<<<< HEAD
-                if (i == 2) { // Middle suggestion
-                    if (containsSameContact(item, mOldEntries.get(0))) {
-                        // Suggestion went from the left to the middle, slide it left to right
-                        animateSlideFromLeft(active);
-                        dontAnimateOverlay[0] = true;
-                    } else if (containsSameContact(item, mOldEntries.get(5))) {
-=======
                 if (i % 3 == 1) { // Middle suggestion
                     if (containsSameContact(item, mOldEntries.get(i - 1))) {
                         // Suggestion went from the left to the middle, slide it left to right
                         animateSlideFromLeft(active);
                         dontAnimateOverlay[i - 1] = true;
                     } else if (containsSameContact(item, mOldEntries.get(i + 1))) {
->>>>>>> 94e8967... SmartDial: increase limit of displayed items
                         // Suggestion sent from the right to the middle, slide it right to left
                         animateSlideFromRight(active);
                         dontAnimateOverlay[i + 1] = true;
@@ -249,19 +240,11 @@ public class SmartDialController {
                         animateFadeInAndSlideUp(active);
                     }
                 } else { // Left/Right suggestion
-<<<<<<< HEAD
-                    if (((i == 3)||(i == 4)) && containsSameContact(item, mOldEntries.get(2))) {
-                        // Suggestion went from middle to the right, slide it left to right
-                        animateSlideFromLeft(active);
-                        dontAnimateOverlay[1] = true;
-                    } else if (((i == 0)||(i == 1)) && containsSameContact(item, mOldEntries.get(2))) {
-=======
                     if (i % 3 == 2 && containsSameContact(item, mOldEntries.get(i - 1))) {
                         // Suggestion went from middle to the right, slide it left to right
                         animateSlideFromLeft(active);
                         dontAnimateOverlay[i - 1] = true;
                     } else if (i % 3 == 0 && containsSameContact(item, mOldEntries.get(i + 1))) {
->>>>>>> 94e8967... SmartDial: increase limit of displayed items
                         // Suggestion went from middle to the left, slide it right to left
                         animateSlideFromRight(active);
                         dontAnimateOverlay[i + 1] = true;
