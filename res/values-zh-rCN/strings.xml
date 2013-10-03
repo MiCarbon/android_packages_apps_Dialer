@@ -131,4 +131,41 @@
     <string name="simContacts_emptyLoading" msgid="6700035985448642408">"正从 SIM 卡中载入..."</string>
     <string name="simContacts_title" msgid="27341688347689769">"SIM 卡联系人"</string>
     <string name="add_contact_not_available" msgid="1419207765446461366">"必须重新启用联系人应用才能使用此功能。"</string>
+
+    <!-- Title bar for call stat detail screen -->
+    <string name="callStatsDetailTitle">详细通话记录</string>
+    <string name="call_stats">详细通话记录</string>
+    <string name="call_stats_refresh">刷新</string>
+    <string name="activity_title_call_stats">通话记录</string>
+
+    <string name="call_stats_nav_all">所有</string>
+    <string name="call_stats_nav_incoming">来电</string>
+    <string name="call_stats_nav_outgoing">拨出</string>
+    <string name="call_stats_nav_missed">未接</string>
+    <string name="call_stats_incoming">来电: <xliff:g id="percent">%d</xliff:g>%%</string>
+    <string name="call_stats_outgoing">拨出: <xliff:g id="percent">%d</xliff:g>%%</string>
+    <string name="call_stats_missed">未接</string>
+    <string name="call_stats_missed_percent">未接: <xliff:g id="percent">%d</xliff:g>%%</string>
+    <string name="call_stats_header_total">总共: <xliff:g id="call_count">%s</xliff:g>, <xliff:g id="duration">%s</xliff:g></string>
+    <string name="call_stats_header_total_callsonly">总共: <xliff:g id="call_count">%s</xliff:g></string>
+    <string name="call_stats_filter_from">开始日期</string>
+    <string name="call_stats_filter_to">结束日期</string>
+    <string name="call_stats_filter_picker_title">过滤范围</string>
+
+    <string name="date_quick_selection">快速选择</string>
+    <string name="date_qs_currentmonth">这个月</string>
+    <string name="date_qs_currentquarter">这个季度</string>
+    <string name="date_qs_currentyear">这一年</string>
+    <string name="date_qs_lastweek">上个星期</string>
+    <string name="date_qs_lastmonth">上个月</string>
+    <string name="date_qs_lastquarter">上个季度</string>
+    <string name="date_qs_lastyear">去年</string>
+
+    <string name="call_stats_date_filter">选择时间范围</string>
+    <string name="call_stats_reset_filter">重置时间范围</string>
+    <string name="call_stats_sort_by_duration">由通话时长排列</string>
+    <string name="call_stats_sort_by_count">由通话次数排列</string>
+
+    <string name="menu_add_to_blacklist">添加到黑名单</string>
+    <string name="toast_added_to_blacklist">%s 已加入黑名单.</string>
 </resources>
